@@ -4,14 +4,11 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Shape[] shapes = {
-			new CircleCreator(3).CreateShape(),
-			new CircleCreator(4).CreateShape(),
-			new RectangleCreator(2,3).CreateShape(),
-		};
-		AreaCalculator cal = new AreaCalculator();
+		ShapeCreator c1 = new CircleCreator(3);
+		ShapeCreator r1 = new RectangleCreator(3,4);
 		
-		System.out.println("Tong dien tich: "+cal.CalculateTotalArea(shapes));
+		System.out.println("Cỉrcle: "+c1.CalArea());
+		System.out.println("Rectangle: "+r1.CalArea());
 	}
 
 }
